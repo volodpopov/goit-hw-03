@@ -1,0 +1,95 @@
+body {
+  width: 1200px;
+  height: 2079px;
+  background-image: url(/img/background.jpg);
+  background-attachment: fixed;
+  margin: 0px;
+}
+.site-navigation {
+  font-size: 14px;
+  font-family: 'Playfair Display';
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 77px 0px 0px 315px;
+  padding: 0mm;
+}
+li {
+  display: inline-block;
+  margin: 0px 105px 0px 0px;
+}
+li a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+h2 {
+  font-size: 30px;
+  font-family: 'Playfair Display';
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  margin: 0px;
+}
+h3 {
+  font-size: 14px;
+  font-family: Ubuntu;
+  font-weight: lighter;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 30px 0px;
+}
+.text {
+  font-size: 14px;
+  font-family: 'Playfair Display';
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+  margin: 40px 0px 0px;
+}
+section {
+  position: absolute;
+  width: 420px;
+}
+.left1 {
+  left: 150px;
+  top: 191px;
+}
+.right1 {
+  left: 630px;
+  top: 191px;
+}
+.left2 {
+  left: 150px;
+  top: 801px;
+}
+.right2 {
+  left: 630px;
+  top: 801px;
+}
+.left3 {
+  left: 150px;
+  top: 1417px;
+}
+.right3 {
+  left: 630px;
+  top: 1417px;
+}
+button {
+  position: absolute;
+  left: 507px;
+  top: 1949px;
+  bottom: 20px;
+  font-size: 20px;
+  font-family: 'Playfair Display';
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  width: 162px;
+  height: 58px;
+}
+.capital {
+  text-transform: capitalize;
+}
