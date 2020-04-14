@@ -1,95 +1,114 @@
 body {
-  width: 1200px;
-  height: 2079px;
-  background-image: url(/img/background.jpg);
-  background-attachment: fixed;
-  margin: 0px;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+/* SITE-NAVIGATION STYLE */
+
+nav {
+  margin-left: 228px;
+  margin-top: 77px;
 }
 .site-navigation {
   font-size: 14px;
-  font-family: 'Playfair Display';
-  color: rgb(98, 98, 98);
+  list-style: none;
+}
+.site-navigation a {
+  text-decoration: none;
+  color: #626262;
   text-transform: uppercase;
   line-height: 1.714;
-  margin: 77px 0px 0px 315px;
-  padding: 0mm;
 }
-li {
+.site-navigation a:hover {
+  color: #03a9f4;
+}
+.site-navigation li {
   display: inline-block;
-  margin: 0px 105px 0px 0px;
+  margin-left: 95px;
 }
-li a {
-  text-decoration: none;
-  color: rgb(98, 98, 98);
+
+/* SECTION STYLE */
+
+section {
+  list-style: none;
+  margin: 0px;
+  margin-left: 150px;
 }
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+section li {
+  padding: 0px;
+  display: inline-block;
+  width: 420px;
+}
+.toprow {
+  margin-top: 103px;
+}
+.middlerow {
+  margin-top: 133px;
+}
+.bottomrow {
+  margin-top: 138px;
+}
+.left {
+  margin-right: 60px;
+}
+
+/* TEXT STYLE */
+
 h2 {
   font-size: 30px;
-  font-family: 'Playfair Display';
-  color: rgb(98, 98, 98);
   line-height: 1.2;
-  margin: 0px;
+  margin: 30px 0px 40px 0px;
 }
 h3 {
+  margin: 30px 0px 0px 0px;
   font-size: 14px;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: lighter;
   color: rgb(180, 173, 158);
   text-transform: uppercase;
   line-height: 1.2;
-  margin: 30px 0px;
 }
-.text {
-  font-size: 14px;
-  font-family: 'Playfair Display';
-  color: rgb(98, 98, 98);
-  line-height: 1.714;
-  text-align: left;
-  margin: 40px 0px 0px;
+p {
+  margin: 0px;
 }
-section {
-  position: absolute;
-  width: 420px;
-}
-.left1 {
-  left: 150px;
-  top: 191px;
-}
-.right1 {
-  left: 630px;
-  top: 191px;
-}
-.left2 {
-  left: 150px;
-  top: 801px;
-}
-.right2 {
-  left: 630px;
-  top: 801px;
-}
-.left3 {
-  left: 150px;
-  top: 1417px;
-}
-.right3 {
-  left: 630px;
-  top: 1417px;
+
+/* BUTTON STYLE */
+
+footer {
+  margin: 33px 0px 70px 520px;
 }
 button {
-  position: absolute;
-  left: 507px;
-  top: 1949px;
-  bottom: 20px;
-  font-size: 20px;
-  font-family: 'Playfair Display';
-  color: rgb(98, 98, 98);
-  line-height: 1.2;
-  background-color: transparent;
+  color: #626262;
   border-width: 1px;
   border-color: rgb(98, 98, 98);
   border-style: solid;
-  width: 162px;
-  height: 58px;
+  padding: 21px 33px;
+  background-color: transparent;
 }
-.capital {
-  text-transform: capitalize;
+
+/* HIDEN H1 */
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
