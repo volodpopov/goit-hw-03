@@ -1,3 +1,24 @@
+/* HIDEN H1 */
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*STYLE FOR THE PAGE*/
+
 body {
   font-family: 'Playfair Display', serif;
   color: #626262;
@@ -6,57 +27,58 @@ body {
   box-sizing: border-box;
 }
 
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
 /* SITE-NAVIGATION STYLE */
 
-nav {
-  margin-left: 228px;
-  margin-top: 77px;
-}
 .site-navigation {
   font-size: 14px;
-  list-style: none;
+  text-align: center;
 }
+
 .site-navigation a {
   text-decoration: none;
   color: #626262;
   text-transform: uppercase;
   line-height: 1.714;
 }
-.site-navigation a:hover {
-  color: #03a9f4;
-}
+
 .site-navigation li {
   display: inline-block;
-  margin-left: 95px;
+  margin: 77px 100px 104px 0px;
+}
+.site-navigation li:last-child {
+  margin-right: 0px;
+}
+
+.site-navigation a:hover {
+  color: #03a9f4;
 }
 
 /* SECTION STYLE */
 
+.section-wrapper {
+  font-size: 0px;
+}
+
 section {
-  list-style: none;
-  margin: 0px;
-  margin-left: 150px;
-}
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-section li {
-  padding: 0px;
   display: inline-block;
   width: 420px;
-}
-.toprow {
-  margin-top: 103px;
-}
-.middlerow {
-  margin-top: 133px;
-}
-.bottomrow {
-  margin-top: 138px;
-}
-.left {
   margin-right: 60px;
+  font-size: 14px;
+}
+
+section:nth-child(even) {
+  margin-right: 0px;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* TEXT STYLE */
@@ -76,13 +98,16 @@ h3 {
   line-height: 1.2;
 }
 p {
-  margin: 0px;
+  margin-bottom: 135px;
+}
+.end {
+  margin-bottom: 55px;
 }
 
 /* BUTTON STYLE */
 
-footer {
-  margin: 33px 0px 70px 520px;
+.btn {
+  text-align: center;
 }
 button {
   color: #626262;
@@ -91,24 +116,5 @@ button {
   border-style: solid;
   padding: 21px 33px;
   background-color: transparent;
-}
-
-/* HIDEN H1 */
-
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  margin-bottom: 70px;
 }
